@@ -1,7 +1,7 @@
 # TIL
 Language, CS, ETC
 
-- Starting : 10/30/17
+- Starting : 04/16/18
 
 # REFERENCE
 - [Hyunmin Ko's TIL](https://github.com/HyunminKo/TIL)
