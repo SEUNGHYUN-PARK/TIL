@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	/*
+		Java나 C처럼 변수를 선언할 때, 자료형을 선언해주지않는다.
+		그냥 var을 선언해주고 변수명을 선언해주면된다.
+		변수를 사용하는 이유는 여러 데이터가 있을때 하나하나 기억해주기 힘드니까.
+		어느 한값을 지정해주면 이의 변화를 따라가면되기떄문에 훨씬 작성하기가 쉽다.
+		** 변수의 정의 : 데이터를 저장하는 영역
+	*/
+	var a = "Hello"
+	alert(a) // a라는 변수안에 헬로우라는 문자열이 들어가있기 때문에 경고창에 Hello라고 뜰 것이다.
+	var b = "World"
+	alert(b) // b라는 변수안에 월드라는 문자열이 들어가있기 때문에 경고창에 World라 뜰 것이다.
+	//자바스크립트에서는 자료형 선언시 데이터 형태를 선언해주지 않는 장점과 함께 var라는 키워드를 써주지않아도 된다.
+	c = 1 
+	d = 2
+	e = "My name is "
+	f = "Wiz"
+	alert(c+d) // 3 출력
+	alert(e+f) // My name is Wiz.
+
+	var first = "coding";
+	alert(first+' everybody'); // 그냥 문자열의 종류는 하나라고 생각하믄 된다. ""나 ''는 같은 개념
+
+	var num= 100
+	alert(num+=10);
+
+</script>
+</body>
+</html>
