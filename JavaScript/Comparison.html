@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+</head>
+<body>
+<script type="text/javascript">
+	/*
+		연산자의 정의 : 값에 대해서 어떤 작업을 컴퓨터에게 지시하기 위한 기호
+
+		대입연산자 (=) : 우항의 값을 좌항의 변수에 대입하는 연산자가 대입연산자
+		비교연산자 (== >= <= > <) : 주어진 값들이 같은지 다른지 큰지 작은지 비교하는 구문 참이면 true, 거짓이면 false -> boolean
+
+		==와 ===의 차이
+		==는 좌항과 우항을 비교해서 서로 값이 같다면 true 다르다면 false => 단순히 값만 비교
+
+		===는 좌항과 우항의 데이터형태와 값이 같다면  true 다르다면 false => 값과 데이터 형식 비교
+
+		**************************
+		그냥 JavaScript에선 ===/!==을 써라
+		**************************
+	
+		undefined : 프로그래머가 의도하지않은 빈 상태
+		null : 프로그래머가 의도한 빈 상태
+
+		NaN : 숫자가 아님 
+		따라서 NaN은 같은 표기라도 각각이 다 다르기 때문에 성립하지않음
+
+	*/
+
+	alert("null == undefined\n"+(null==undefined))
+	alert("null === undefined\n" +(null===undefined))
+	alert("true == 1\n" +(true == 1))
+	alert("true === 1\n" +(true === 1))
+	alert("true == '1'\n" +(true == '1'))
+	alert("true === '1'\n" +(true === '1'))
+
+	alert("0 === -0\n"+(0 === -0))
+	alert("NaN === NaN\n"+(NaN === NaN))
+	
+</script>
+</body>
+</html>
