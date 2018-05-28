@@ -51,7 +51,7 @@ How to control Object (Size Conversion, Rotate, Move, Etc...)
     3. Drag & Drop
   * Install Point Light
     1. 화면 좌측에 Point Light 클릭 후  Drag & Drop
-    2. 전구의 초기상태를 설정해주고싶으면, 화면 우측의 Rendering 탭의
+    2. 전구의 초기상태를 설정해주고싶으면, 화면 우측의 Rendering 탭의 visible 선택/해제. 
 * Blueprint 설정
   1. 화면 상단의 블루프린트 버튼 클릭 -> 여러 선택지 중 레벨 블루프린트 제작 버튼 클릭 -> 새로운 창 생성
   2. 블루프린트 화면이동은 오른쪽 마우스를 누른채로 Drag & Drop
