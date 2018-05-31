@@ -5,6 +5,7 @@
 </head>
 <body>
 <script type="text/javascript">
+	/*
 	var id = prompt("아이디를 입력해주세요");
 	if(id==='abcd')
 	{
@@ -22,6 +23,29 @@
 	{
 		alert("잘못된 계정정보를 입력하셨습니다.");
 	}
+*/
+	var a = prompt("아이디를 입력해주세요");
+	var b = prompt("비밀번호를 입력해주세요");
+	if(a==='aaaa'||a=='bbbb'||a=='cccc')
+	{
+		if(a==='aaaa'&&b==='1111'||a==='bbbb'&&b==='2222'||a==='cccc'&&b==='3333')
+		{
+			alert(a+"님 환영합니다");
+		}
+		else if(a==='aaaa'&&b!=='1111')
+		{
+			alert("hello")
+		}
+		else 
+		{
+			alert("잘못된 계정정보입니다.");
+		}
+	}
+	else
+	{
+		alert("잘못된 계정정보입니다.");
+	}
+	
 		
 </script>
 </body>
