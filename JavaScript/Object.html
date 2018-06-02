@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    /*
+      객체는 배열과 유사. 하지만 Key와 Value를 하나로 매핑해 연결
+      C++ : map / Java : HashMap의 역할을 담당
+
+      배열과는 다르게 {}로 표현 (배열은 []로 표현했으니 이는 주의할 것.)
+      기본형태
+      var dictionary = {key:value ...}
+      var grades = new Object();
+    */
+    var dic = {'Park' : 100, "Kim" : 20, "Lim" : 99};
+    var damages = new Object();
+    damages['Marine'] = 6; //damage.Marine
+    damages['Vulture'] = 20; // damage.Vulture
+    damages['Zealot'] = 16; // damage.Zealot
+
+    //객체.key의 방식으로도 표현이 가능하나, 모든 객체를 저렇게 표현할 수 는 없다.
+    //따라서 그냥 객체[키] 이런식으로 진행하는게 좋을듯하다.
+
+    //객체의 탐색
+    //배열과는 달리 객체안에는 인덱스가 없다.
+    //그렇기 때문에 Key를 활용하여 탐색한다.
+    // for(key in 객체변수명)를 활용하여 탐색
+    // ex)
+    for(key in damages) // 데미지 객체 안에 키들을 전부 탐색한다
+    {
+      document.write("key : "+ key +" / " + "value : " + damages[key] + "<br/>"); // 키에 따른 밸류값은 객체명[key]로 표시
+    }
+
+    document.write("유닛테스트<br/>");
+    var units = {
+      //변수 선언
+      'damage' : {'Marine':6,'Zealot':16,'Vulture':20}, // =가 아니라 :로 선언한다. 그리고 ,로 연결을 꼭 시켜줘야한다.
+      //메소드 선언같은느낌이랄까
+      'print' : function(){
+        for(var name in this.damage)
+        {
+          document.write("Name : " + name + " / " +"damage : "+ this.damage[name]+"<br/>");
+        }
+      }
+      //this는 객체 자체를 의미한다. 따라서 this.damage는 units 객체 안의 damage라는 하나의 데이터셋을 가리킴을 의미 
+    }
+
+    units['print'](); // units.print(); 로 출력 가능하다.
+
+
+    </script>
+  </body>
+</html>
