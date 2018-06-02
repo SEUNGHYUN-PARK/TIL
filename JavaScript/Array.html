@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    /*
+      배열의 정의 : 연관된 데이터를 모아서 통으로 관리하기위해 사용하는 데이터 타입
+      배열의 선언 (대괄호로 시작해서 대괄호로 끝난다)
+      ex) var arr = ['hello','world','javascript']
+      기존의 배열과 선언만 다를뿐 기본적인 메커니즘은 동일
+      하지만 C/Java에처럼 하나의 배열에 동일한 자료형의 데이터만이 들어갈수 있는것과는 달리,
+      자바스크립트는 문자 정수 실수를 하나의 배열에 삽입하는게 가능
+      ADT : 추가, 제거, 정렬, 배열결합
+    */
+    //ex1
+    function get_member()
+    {
+      return ['c','java','javascript','python']
+    }
+    var language = get_member();
+    for(i=0;i<language.length;i++) // javascript는 length는 ()를 안붙임
+    {
+      document.write(language[i].toUpperCase() + "<br/>"); // toUpperCase() : 스트링 내 모든 철자를 대문자로변환
+    }
+
+    //데이터 최후방삽입 push()
+    var arr = [1,2,3,4,5]
+    var ar = [7,8,9,10]
+    arr.push(6)
+    document.write(arr+"<br/>");
+
+    //배열결합 concat()
+    arr = arr.concat(ar);
+    document.write(arr+"<br/>");
+
+    //데이터 최전방삽입 unshift()
+    arr.unshift(0);
+    document.write(arr+"<br/>");
+
+    //데이터 임의삽입 splice()
+    //splice(idx,howmany,element...)
+    // idx : 배열에 추가할 특정 배열위치를 가르키는 index
+    // howmany : index에서부터 제거 될 원소들의 수, idx부터 idx+howmany에 해당하는 원소들은 삭제
+    // element... : 추가할 데이터 수
+    var number = [-3, 1 ,2, 3]
+    number.splice(1,0,0); // 1번 인덱스에 0을 넣는데 하나도 삭제하지않을거다
+    document.write(number+"<br/>"); // -3,0,1,2,3
+    number.splice(1,4,-2,-1,0,1); // 1번 인덱스에 넣을건데 데이터 4개를 삭제하고 그 자리에 -2,-1,0,1을 삽입
+    document.write(number+"<br/>"); // -3 -2 -1 0 1
+
+    //데이터 최후방삭제 arr.pop()
+    number.pop();
+    document.write(number+"<br/>"); // -3 -2 -1 0
+
+    //데이터 최전방삭제 arr.shift()
+    number.shift();
+    document.write(number+"<br/>"); //-2 -1 0
+
+    // 데이터 역순 정렬 -> 임의의 배열을 그냥 역으로 출력
+    var unsortedarr= [5,8,7,4,3,9,1,0,2,6]
+    unsortedarr.reverse();
+    document.write(unsortedarr+"<br/>");
+
+    //데이터 정렬 arr.sort() -> 오름차순
+    unsortedarr.sort();
+    document.write(unsortedarr+"<br/>");
+
+    </script>
+  </body>
+</html>
