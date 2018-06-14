@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    /*
+        수량자 : 어떠한 패턴이 얼만큼 등장하는가에 대해 표현을 돕는 기호
+        종류 : * + ?
+
+        수량자 * : * 앞의 문자가 0~N개까지 고려하는 수량자
+        Source : aabc abc bc
+
+            # 수량자 * 예시)
+            Regular Expression : a*b // b, ab, aab, aaab.... 감지
+                   First Match : AABc abc bc
+                   All Matches : AABc ABc Bc
+
+        수량자 + : + 앞의 문자가 1~N개까지 고려하는 수량자
+        Source : aabc abc bc
+
+            # 수량자 + 예시)
+            Regular Expression : a+b // ab, aab, aaab, .... 감지
+                   First Match : AABc abc bc
+                   All Matches : AABc ABc bc
+
+        수량자 ? : ? 앞의 문자가 0~1개까지 고려하는 수량자
+        Source : aabc abc bc
+
+            # 수량자 ? 예시)
+            Regular Expression : a*b // ab, b 감지
+                   First Match : aABc abc bc
+                   All Matches : aABc ABc Bc
+
+
+        활용 #1
+        Source : -@-***--"*"--***-@-
+
+            #1
+            Regular Expression : .* // 모든문자를 *개 만큼 감지
+                   First Match : -@-***--"*"--***-@- // 첨부터 모든 문자를 감지
+                   All Matches : -@-***--"*"--***-@- // 나중에도 모든 문자 감지
+
+            #2
+            Regular Expression : -A*- // -- -A- -AA- -AAA- ....
+                   First Match : -@-*** -- "*"--***-@- // 최초로 발견되는 -- 감지
+                   All Matches : -@-*** -- "*" -- ***-@- // 모든 -- 감지
+
+            #3
+            Regular Expression : [-@]* // - 혹은 @의 조합으로 감지 -- @@ -@ --- @@@ -@@ -@-....
+                   First Match : -@- ***--"*"--***-@- // 최초로 발견되는 -@- 감지
+                   All Matches : -@- *** -- "*" -- *** -@- // -@- -- -- -@- 감지
+
+        활용 #2
+        Source : -@@@- * ** - - "*" - - * **-@@@-
+
+            #1
+            Regular Expression : \*+ // 문자 *를 1개~N개만큼 감지
+                   First Match : -@@@- * ** - -"*" - - * **-@@@-
+                   All Matches : -@@@- * ** - -" * " - - * ** -@@@- // *** * *** 감지
+
+            #2
+            Regular Expression : -@+- // -@- -@@- -@@@- ...
+                   First Match : -@@@- *** - -"*" - -***-@@@-
+                   All Matches : -@@@- *** - -"*" - -*** -@@@- -@@@- -@@@- 감지
+
+            #3
+            Regular Expression : [^ ]+ // 띄어쓰기를 제외한 나머지문자들이 1개~N개만큼 감지
+                   First Match : -@@@- * ** - -"*" - - * ** -@@@- // 처음 -@@@-감지
+                   All Matches : -@@@- * ** - -"*" - - * ** -@@@- // 문자열 내 모든 문자 감지
+
+
+        활용 #3
+        Source : --xx-@-xx-@@-xx-@@@-xx-@@@@-xx-@@-@@-
+
+            #1
+            Regular Expression : -x?xx?x // ?는 ? 앞에 문자 하나가 0 or 1이므로 -xx -xxx -xxxx
+                   First Match : - -xx -@-xx-@@-xx-@@@-xx-@@@@-xx-@@-@@- // -xx감지
+                   All Matches : - -xx -@ -xx -@@ -xx -@@@ -xx -@@@@ -xx -@@-@@- // -xx 들 감지
+
+            #2
+            Regular Expression : -@?@?@?- // -- -@- -@@- -@@@-
+                   First Match : -- xx-@-xx-@@-xx-@@@-xx-@@@@-xx-@@-@@- // --만 감지
+                   All Matches : -- xx -@- xx -@@- xx -@@@- xx-@@@@-xx -@@- @@- // -- -@- -@@- -@@@- 들 감지
+        
+
+    */
+    </script>
+  </body>
+</html>
