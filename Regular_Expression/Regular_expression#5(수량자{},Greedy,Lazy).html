@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    /*
+        수량자 * + ? 는 디테일하게 갯수를 설정할 수 없다는 단점이 있음 (탐욕적 수량자)
+        물론 이것도 많이 씀
+        하지만 디테일하게 반복횟수를 설정하는 방법은 {}을 이용한다
+        ** 게으른 수량자 : *?와 +?는 반복적인 패턴이 여러번일때 여러개로 나눠서 끊어줌 **
+
+
+        Source : one ring to bring them all and in the darkness bind them
+
+
+        #1
+        Regular Expression : .{5} // .을 5번반복한 글자 .....만이 적용가능
+               First Match : ONE Ring to bring them all and in the darkness bind them
+               All Matches : ONE RING TO BRING THEM ALL AND IN THE DARKNESS BIND THEm
+        #2
+        Regular Expression : [els]{1,3} e||l||s가 1이상 3이하
+               First Match : onE ring to bring them all and in the darkness bind them
+               All Matches : onE ring to bring thEm aLL and in thE darknESS bind thEm
+        #3
+        Regular Expression : [a-z]{3,} a~z까지의 문자로 이뤄진 길이 3이상의 부분문자열
+               First Match : ONE ring to bring them all and in the darkness bind them
+               All Matches : ONE RING to BRING THEM ALL AND in THE DARKNESS BIND THEM
+        #4
+        Regular Expression : r.* // r다음에 문자가 0개부터 N개까지의 부분문자열
+               First Match : one RING TO BRING THEM ALL AND IN THE DARKNESS BIND THEM
+               All Matches : one RING TO BRING THEM ALL AND IN THE DARKNESS BIND THEM
+        #5
+        Regular Expression : r.*? // r 다음에 문자 0개를 부분문자열로 취급해 각 단어별로 감지되면 출력
+               First Match : one Ring to bring them all and in the darkness bind them
+               All Matches : one Ring to bRing them all and in the daRkness bind them
+        #6
+        Regular Expression : r.+? // r 다음에 문자 1개만을 부분문자열로 취급해 각 단어별로 감지되면 출력
+               First Match : one RIng to bring them all and in the darkness bind them
+               All Matches : one RIng to bRIng them all and in the daRKness bind them
+        #7
+        Regular Expression : r.?? // r 각 단어마다 r이 있으면 r만 취급
+               First Match : one Ring to bring them all and in the darkness bind them
+               All Matches : one Ring to bRing them all and in the daRkness bind them
+
+
+
+
+    */
+    </script>
+  </body>
+</html>
