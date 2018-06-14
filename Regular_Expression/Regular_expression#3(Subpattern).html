@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    /*
+        부분문자열을 래핑하는 기호 : ( ) <[]가 아님>
+        Source : monday tuesday friday
+
+        #1
+        Regular Expression : (on|ues|rida) // 부분 문자열은 |로 구분
+               First Match : mONday tuesday friday
+               All Matches : mONday tUESday fRIDAy
+               >> ()안의 부분 문자열 on ues rida가 하나라도 나오면 마킹
+        #2
+        Regular Expression : (mon|tues|fri)day // mon || tues || fri + day를 합한것을 뽑아냄
+               First Match : MONDAY tuesday friday
+               All Matches : MONDAY TUESDAY FRIDAY
+               >> ()안의 부분 문자열 mon tues fri가 하나에 day를 합친 monday, tuesday, friday가 나오면 마킹
+        #3
+        Regular Expression : ..(id|esd|nd)ay // ..는 아무문자 두문자에 + id || esd || nd + ay를 합쳤을때 나오는 단어 마킹
+               First Match : MONDAY tuesday friday
+               All Matches : MONDAY TUESDAY FRIDAY
+               >> ..iday || ..esday || ..nday로 타겟이정해지며 ..는 임의의 두 문자를 선택하므로 결국은 friday tuesday monday로 완성      
+    */
+    </script>
+  </body>
+</html>
