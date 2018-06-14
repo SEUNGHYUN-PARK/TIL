@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    /*
+
+      정규표현식은 대소문자와 띄어쓰기에 민감하다
+      Hello != hello -> True
+      Hello, world != Hello,  world -> True
+
+      특수문자 ^
+      소스상에서 시작위치에 있는 부분문자열을 검출할 때
+      ex) ^who -> WHO is who (맨 앞에 있는 단어를 검출, 편의상 대문자로 표기)
+
+      특수문자 $
+      소스상에서 맨 마지막위치에 있는 문자열을 검출할 때
+      ex) who$ -> who is WHO (맨 뒤에 있는 부분문자열을 검출, 편의상 대문자로 표기)
+
+      특수문자 .
+      .의 갯수만큼의 부분문자열을 추출
+      만약 전체문자열에서 부분문자열들을 제외하고 남은 문자열의 길이가 .의 갯수보다 적을경우 선택이 되지않음
+      ex) Target : regular expressions are powerful!!!
+          Regular expressions : .
+                  First Match : Regular expressions are powerful!!!
+                  All Matches : REGULAR EXPRESSIONS ARE POWERFUL!!! (스트링 전체)
+
+          Regular expressions : ......
+                  First Match : Regular expressions are powerful!!!
+                  All Matches : REGULAR EXPRESSIONS ARE POWERFul!!! (마지막 5글자 제외)
+                  
+      만약 ^와 $같이 특수한 기능을 수행하는 문자들이 문자열안에 있고 이를 검출하고 싶을땐 '\'을 이용 -> Escape
+      ex) Target : $12$\-\$25$
+          Regular expression : ^$
+                 First Match : $12$\-\$25$ (검출이 안됨)
+                 All Matches : $12$\-\$25$ (검출이 안됨)
+                 이 문자열에서 검출이 안되는 이유 : ^와 $는 각각의 기능을 담당하기떄문에 검출이 안됨
+
+          Regular expression : \$
+                 First Match : $ 12$\-\$25$ (맨 앞의 $ 검출)
+                 All Matches : $ 12 $ \-\ $ 25 $ (문자열내 모든 $ 검출)
+                 문자열 내 모든 '$'가 검출되었다
+
+          Regular expression : ^\$
+                 First Match : $ 12$\-\$25$ (문자열 맨 앞 $ 검출)
+                 All Matches : $ 12$\-\$25$ (문자열 맨 앞의 $만 검출)
+                 문자열 내 최초 발견된 '$'만 검출
+
+          Regular expression : \$$
+                 First Match : $12$\-\$25 $ (문자열 맨 마지막 $ 검출)
+                 All Matches : $12$\-\$25$ (문자열 맨 마지막의 $만 검출)
+                 문자열 내 마지막으로 발견된 '$'만 검출
+
+      ex) Target : o.k.
+          Regular expressions : .
+                  First Match : O.k.
+                  All Mathes  : O.K. (스트링 전체)
+          Regular expressions : \.
+                  First Match : o.k. (최초로 발견한 점만)
+                  All Mathes  : O.K. (스트링 전체에 있는 점만 추출)
+          Regular expressions : \..\. <(\. . \.) : .문자.를 검출>
+                  First Match : o.K. (문자열 내에서 최초 .K. 검출)
+                  All Mathes  : o.K. (문자열 내에서 .K. 전체검출)
+
+
+
+
+    */
+
+    </script>
+  </body>
+</html>
