@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    /*
+        character class
+        기존의 수량자가 아닌 다른 기호를 통해 원하는 부분문자열을 추출할 수 있다
+        \w  : alphabet + numeric + _
+        \W  : [^A-z0-9_]
+        \d  : numeric
+        \D  : ^numeric
+        \b  : Word boundary == 띄어쓰기
+        \B  : Not Word boundary
+        \A  : 문서의 시작점을 기준으로 문자를 뽑음 <-> ^는 문장의 시작점
+        \Z  : 문서의 마지막점을 기준으로 문자를 뽑음 <-> $는 문장의 끝지점
+
+
+        **************************************
+        Source : a1 b2 c3 d_4 e:5 ffGG77--__--
+        **************************************
+
+          #1
+          Regular Expression : \w // 글자 하나 씩 잡음
+                 First Match : A 1 b2 c3 d_4 e:5 ffGG77--__--
+                 All Matches : A 1 B 2 C 3 D _ 4 E : 5 F F G G 77-- _ _ --
+
+          #2
+          Regular Expression : \w* // 글자 여러개씩 잡음
+                 First Match : A1 b2 c3 d_4 e:5 ffGG77--__--
+                 All Matches : A1 B2 C3 D_4 E:5 FFGG77-- __ --
+
+          #3
+          Regular Expression : [a-z]\w* //맨앞글자는 소문자여야하고 다음부터는 글자집합
+                 First Match : A1 B2 c3 d_4 e:5 ffGG77--__--
+                 All Matches : A1 B2 c3 d_4 e :5 ffGG77 --__-- // __는 인식하지않음
+
+          #4
+          Regular Expression : \w{5} // 글자 5글자 매핑
+                 First Match : a1 b2 c3 d_4 e:5 ffGG7 7--__--
+                 All Matches : a1 b2 c3 d_4 e:5 ffGG7 7--__--
+
+          #5
+          Regular Expression : [A-z0-9_] // == \w
+                 First Match : A 1 b2 c3 d_4 e:5 ffGG77--__--
+                 All Matches : A 1 B 2 c 3 d _ 4 e : 5 f f G G 7 7-- _ _ --
+
+          #6
+          Regular Expression : [A-z0-9_] // == \w
+                 First Match : A 1 b2 c3 d_4 e:5 ffGG77--__--
+                 All Matches : A 1 B 2 c 3 d _ 4 e : 5 f f G G 7 7-- _ _ --
+
+        ********************************
+        Source : AS _34:AS11.23 @#$%12^*
+        ********************************
+
+          #1
+          Regular Expression : \W
+                 First Match : AS' '_34:AS11.23 @#$%12^*
+                 All Matches : AS' '_34 : AS11 . 23' ' @ # $ % 12 ^ *
+
+          #2
+          Regular Expression : \w
+                 First Match : A S _34:AS11.23 @#$%12^*
+                 All Matches : A S _ 3 4 : A S 1 1 . 2 3 @#$% 1 2 ^*
+
+
+        ***********************************************
+        Source : Page 123; published: 1234 id=12#24@112
+        ***********************************************
+
+          #1
+          Regular Expression : \d
+                 First Match : Page 1 23; published: 1234 id=12#24@112
+                 All Matches : Page 1 2 3 ; published: 1 2 3 4 id= 1 2 # 2 4 @ 1 1 2
+
+          #2
+          Regular Expression : \D
+                 First Match : P age 123; published: 1234 id=12#24@112
+                 All Matches : PAGE 123 ;PUBLISHED: 1234 ID=12 # 24 @ 112
+
+          #3
+          Regular Expression : \w
+                 First Match : Page 123; published: 1234 id=12#24@112
+                 All Matches : Page 123; published: 1234 id=12#24@112
+
+        *********************************************************************************
+        Source : Ere iron was found or tree was hewn, When young was mountain under moon
+        *********************************************************************************
+
+          #1
+          Regular Expression : \b\w // 단어의 첫글자를 의미
+                 First Match : Ere iron was found or tree was hewn, When young was mountain under moon
+                 All Matches : Ere Iron Was Found Or Tree Was Hewn, When Young Was Mountain Under Moon
+
+          #2
+          Regular Expression : \b.// 띄어쓰기+단어의 첫글자
+                 First Match : Ere iron was found or tree was hewn, When young was mountain under moon
+                 All Matches : Ere''Iron''Was''Found''Or''Tree''Was''Hewn,''When''Young''Was''Mountain''Under''Moon
+
+          #3
+          Regular Expression : .\b// 각 단어의 마지막글자+띄어쓰기
+                 First Match : Ere iron was found or tree was hewn, When young was mountain under moon
+                 All Matches : ErE''iroN''waS''founD''oR''treE''waS''hewn,'' WheN''younG''waS''mountaiN''undeR''mooN''
+
+          #4
+          Regular Expression : \b\w+\b // 단어 자체를 잡음
+                 First Match : ERE iron was found or tree was hewn, When young was mountain under moon
+                 All Matches : ERE IRON WAS FOUND OR TREE WAS HEWN, WHEN YOUNG WAS MOUNTAIN UNDER MOON
+
+          #5
+          Regular Expression : \A... // 문서 자체의 첫시작의 커서를 가리킴+.의 갯수만큼 글자 포함해서 부분문자열 완성
+                 First Match : Ere iron was found or tree was hewn, When young was mountain under moon
+                 All Matches : ERE iron was found or tree was hewn, When young was mountain under moon
+
+          #6
+          Regular Expression : ..\Z // 문서 자체의 마지막부분의 커서를 가리킴 + .의 갯수만큼 글자 포함해서 부분문자열 완성
+                 First Match : Ere iron was found or tree was hewn, When young was mountain under moon
+                 All Matches : ERE iron was found or tree was hewn, When young was mountain under mOON
+    
+    */
+    </script>
+  </body>
+</html>
