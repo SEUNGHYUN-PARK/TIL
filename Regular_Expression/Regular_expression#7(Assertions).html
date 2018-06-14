@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    /*
+
+        \w+(?=마지막 글자) : 마지막 글자의 조건을 이용해, \w를 충족하는 단어의 처음부터 마지먹 글자의 전까지 파싱하는 과정
+
+        **************************
+        Source : AAAX---aaax---111
+        **************************
+
+          #1
+          Regular Expression : \w+(?=X) // 문장을 파싱하다 마지막 글자가 X가 발견되면 X바로 직전까지의 부분문자열 파싱
+                 First Match : AAA X---aaax---111
+                 All Matches : AAAX---aaax---111
+
+          #2
+          Regular Expression : \w+ // 아무 조건이 없으므로 \w을 만족하는 글자 파싱
+                 First Match : AAAX ---aaax---111
+                 All Matches : AAAX --- aaax --- 111
+
+          #3
+          Regular Expression : \w+(?=\w) // 문장을 파싱하다 마지막 글자가 \w을 발견되면 \w 바로 직전까지의 부분문자열 파싱
+                 First Match : AAA X---aaax---111
+                 All Matches : AAA X--- aaa x--- 11 1
+
+    */
+    </script>
+  </body>
+</html>
