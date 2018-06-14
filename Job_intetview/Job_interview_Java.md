@@ -6,8 +6,8 @@ Java
 
 #### 참고
 
-* [악덕고용주의 개발일기]("http://rongscodinghistory.tistory.com/44")  
-* [Github-Interview_Question_for_Beginner]("https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Java")  
+[악덕고용주의 개발일기]("http://rongscodinghistory.tistory.com/44")  
+[Github-Interview_Question_for_Beginner]("https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Java")  
 
 ## 자바의 특징  
 1. OOP(객체 지향 언어)  
@@ -85,7 +85,9 @@ Java
 *  클래스 내부에서 사용할 테이터 타입을 인스턴스 생성시에 결정짓는 방식  
 
 ## Wrapper Class를 사용해야하는 이유  
-* 기본 data 타입은 객체가 아니여서 object로 받는 다형성을 지원할 수 없다. 하지만, 메서드에서 실제로 기본데이터 타입을 다형성으로 넘겨주어야하는 경우가 빈번히 발생하는데 이때 기본 데이터 타입을 객체로 변환시켜 전달하기 위해 사용됨 최근에는 AUTOBoxing, AUTOUnBoxing지원  
+* 기본 data 타입은 객체가 아니여서 object로 받는 다형성을 지원할 수 없다
+  하지만, 메서드에서 실제로 기본데이터 타입을 다형성으로 넘겨주어야하는 경우가 빈번히 발생하는데 이때 기본 데이터 타입을 객체로 변환시켜 전달하기 위해 사용됨  
+최근에는 AUTOBoxing, AUTOUnBoxing지원  
 
 ##final 키워드  
 * final class  
