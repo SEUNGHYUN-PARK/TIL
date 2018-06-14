@@ -6,7 +6,7 @@ Algorithm
 
 #### 참고
 
-[Github-Interview_Question_for_Beginner]("https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Java")  
+[Github-Interview_Question_for_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Java)  
 
 ### 코딩 테스트를 위한 팁  
 1. 문제를 분석하기위해 막 적어라  
@@ -106,10 +106,10 @@ Algorithm
       * 최적 부분 구조 : 각 단계에서 항상 최적의 선택만을 했을 때, 전체 최적해를 구할 수 있는가  
 
 ### 정렬 알고리즘 - 한번 보고 들어갈 것  
-[Link]("https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Algorithm#sorting-algorithm")  
+[Link](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Algorithm#sorting-algorithm)  
 
 ### 에라토스테네스 체  
-[원리는 여기를참고]("https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Algorithm#prime-number-algorithm")  
+[원리는 여기를참고](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Algorithm#prime-number-algorithm)  
 ```
 int p[100]; // 소수 저장
 int pn=0; // 소수의 개수
