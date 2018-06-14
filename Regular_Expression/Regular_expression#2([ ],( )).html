@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    /*
+        * 원하는 문자의 후보군을 지정하는 기호 []
+        Source : how do you do?
+
+        #1
+        Regular Expression : [oyu]
+               First Match : hOw do you do?
+               All Matches : hOw dO YOU dO?
+               >> 문장을 파싱하다 []안의 o, y, u 이 세 문자에 대해 선택하게되므로 문장내에 o,y,u는 다 선택됨
+
+        #2
+        Regular Expression : [dh].
+               First Match : HOw do you do?
+               All Matches : HOw DO you DO?
+               >> 위 정규 표현식은 d,h중 어느 것을 만나면 선택하는것이고, 거기다 .을 더하면 뒤의 문자 하나를 더 추가해서 매핑
+
+        #3
+        Regular Expression : [owy][yow]
+               First Match : hOW do you do?
+               All Matches : hOW do YOu do?
+               >> 위 정규 표현식은 첫번째 []에서 o,w,y중 하나라도 만나면 체킹, 두번째 []은 y,o,w중 하나라도 만나면 체킹
+                  총 3*3 = 9 가지의 경우의 문자를 만나면 매핑
+
+        * 특정 Range를 묶어서 후보군을 지정하는 기호 -
+        Source : abcdefghijklmnopqrstuvwxyz 0123456789
+
+        #1
+        Regular Expression : [c-k] // C부터 K까지(CDEFGHIJK) 안의 문자를 만나면 체킹
+               First Match : abCdefghijklmnopqrstuvwxyz 0123456789
+               All Matches : abCDEFGHIJKlmnopqrstuvwxyz 0123456789
+
+        #2
+        Regular Expression : [cdefghijk] // CDEFGHIJK의 문자를 만나면 체킹
+               First Match : abCdefghijklmnopqrstuvwxyz 0123456789
+               All Matches : abCDEFGHIJKlmnopqrstuvwxyz 0123456789
+
+        #3
+        Regular Expression : [a-d]
+               First Match : Abcdefghijklmnopqrstuvwxyz 0123456789 a추출
+               All Matches : ABCDefghijklmnopqrstuvwxyz 0123456789 a부터 d까지 추출
+
+        #4
+        Regular Expression : [2-6]
+               First Match : abcdefghijklmnopqrstuvwxyz 01 2 3456789 // 2만 추출
+               All Matches : abcdefghijklmnopqrstuvwxyz 01 23456 789 // 영역내 모든 숫자인 23456 추출
+
+        #5
+        Regular Expression : [a-d2-6e-z]
+               First Match : Abcdefghijklmnopqrstuvwxyz 0123456789 // 제일 처음 문자인 a추출
+               All Matches : ABCDEFGHIJKLMNOPQRSTUVWXYZ 01 23456 789 // 영역내 모든 숫자인 23456와 모든 알파벳 추출
+
+        * []안의 문자를 제외하고 나머지는 선택하는 ^
+        Source : abcdefghijklmnopqrstuvwxyz 0123456789
+
+        #1
+        Regular Expression : [^cdghi45] // c d g h i 4 5 문자를 제외한 나머지 추출
+               First Match : Abcdefghijklmnopqrstuvwxyz 0123456789
+               All Matches : ABcdEFghiJKLMNOPQRSTUVWXYZ 0123 45 6789(c,d,g,h,i,4,5빼고 다 선택)
+
+        #2
+        Regular Expression : [^W-Z] // WXYZ빼고 다 선택
+               First Match : Abcdefghijklmnopqrstuvwxyz 0123456789
+               All Matches : ABCDEFGHIJKLMNOPQRSTUVwxyz 0123456789(w,x,y,z빼고 다 선택)
+    */
+    </script>
+  </body>
+</html>
