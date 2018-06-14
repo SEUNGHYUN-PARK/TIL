@@ -6,8 +6,8 @@ Java
 
 #### 참고
 
-[악덕고용주의 개발일기]("http://rongscodinghistory.tistory.com/44")  
-[Github-Interview_Question_for_Beginner]("https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Java")  
+[악덕고용주의 개발일기](http://rongscodinghistory.tistory.com/44)  
+[Github-Interview_Question_for_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Java)  
 
 ## 자바의 특징  
 1. OOP(객체 지향 언어)  
