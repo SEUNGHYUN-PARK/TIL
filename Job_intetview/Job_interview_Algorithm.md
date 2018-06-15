@@ -6,7 +6,7 @@ Algorithm
 
 #### 참고
 
-[Github-Interview_Question_for_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Java)  
+[Github-Interview_Question_for_Beginner](https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Algorithm)  
 
 ### 코딩 테스트를 위한 팁  
 1. 문제를 분석하기위해 막 적어라  
