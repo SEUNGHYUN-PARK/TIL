@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    /*
+      Javascript 의 정규표현식
+      $ 정규표현식을 활용해 하는 작업 3가지 : 정보 추출(exec), 존재 유무(test), 정보 치환
+
+      $ 정규표현식 설정
+      1. /char/ : /와 /사이에 있는 단어를 타게팅하는 것
+      ex) var pattern = /a/;
+      2. 정규표현식 객체 사용자를 이용함
+      객체 사용자 할당 <new RegExp>
+      ex) var pattern = new RegExp('a');
+
+      $ 정규표현식의 메소드
+      * exec('원본'); // '원본'을 대상으로 pattern을 찾아냄, 즉 추출
+      ex) var pattern = /a/;
+          pattern.exec('abcde');
+          => ["a"] // abcde안에 a를 리턴
+
+      ex) var pattern = /a./;
+          pattern.exec('abcde');
+          => ["ab"] // abcde안에 a와 .(아무문자)를 리턴
+
+      ex) var pattern = /a/;
+          pattern.exec('bcdef');
+          =>null // bcdef에선 a를 찾을 수 없음
+
+      * test('원본'); // 원본을 대상으로 패턴을 찾을 수 있다면 true, 없다면 false, 즉 검색
+      ex) var pattern = /a/;
+          pattern.test('bcde');
+          => false;
+          pattern.test('abcde');
+          => true;
+
+      * match('패턴'); // 스트링을 대상으로 패턴을 찾아냄, 즉 추출
+      ex) var pattern = /a/;
+          var str = 'abcdef';
+          str.match(pattern);
+          =>["a"]
+
+      * replace('패턴', '바꾸고자하는 것'); // 스트링을 대상으로 패턴을 찾아내고 그것을 바꾸고저하는 것으로 바꿈
+      ex) var pattern = /a/;
+          var str = 'abcdef';
+          str.replace(pattern,'A');
+          =>"Abcdef; // 하지만 원본은 바뀌지않는다.
+
+      $ 정규표현식의 옵션 : i,g
+      * i : 대소문자를 구분하지않고, 타겟에서 찾아내는 옵션
+      ex) var xi = /a/;
+          "Abcdef".match(xi);
+          =>null;
+          var oi = /a/i;
+          "Abcdef".match(oi);
+          =>["A"]
+
+      * g : 갯수에연연하지않고 복수개의 패턴을 찾아 추출하는 옵션
+      ex) var xg = /a/;
+          "abcdef".match(xg);
+          =>["a"]
+          var og = /a/g;
+          "abcdefaa".match(og);
+          =>["a","a","a"]
+
+      ** 위 두 옵션은 같이 사용이 가능 **
+      ex) var ig = /a/ig;
+          "AabcdefaA".match(ig);
+          =>["a","a","a","a"]
+    */
+    </script>
+  </body>
+</html>
