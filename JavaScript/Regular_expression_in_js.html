@@ -71,6 +71,17 @@
       ex) var ig = /a/ig;
           "AabcdefaA".match(ig);
           =>["a","a","a","a"]
+
+
+      $ 캡쳐 : $문자를 이용하면 문자열을 구분지어서 저장할수있고 이를 이용해 자리바꿈등을 수행할 수 있다.
+      ex) var pattern = /(\w+)\s(\w+)/;
+          var str = "coding everybody";
+          str.replace(pattern,"$2, $1");
+          => "everybody, coding" // $1에 coding이 $2에는 everybody가 저장되고 이 둘을 바꿔서 출력
+      
+
+      $
+
     */
     </script>
   </body>
