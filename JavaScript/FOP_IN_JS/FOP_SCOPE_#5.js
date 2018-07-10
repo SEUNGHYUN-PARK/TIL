@@ -9,3 +9,5 @@ function b()
 {
   document.write(i); //  따라서 전역변수 5의 값을 갖는 i가 출력된다.
 }
+
+a();
