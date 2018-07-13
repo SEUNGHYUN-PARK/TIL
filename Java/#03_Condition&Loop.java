@@ -70,8 +70,5 @@ public class HelloJava {
                 System.out.print(i+" ");
             i++;
         }
-
-
     }
-
 }
