@@ -24,8 +24,8 @@ import java.util.Scanner;
 public class HelloJava {
     public static void main(String[] args) {
 
-        System.out.println(oddjudge(10));
-        System.out.println(sum(3,4));
+        System.out.println(oddjudge(10)); // 리턴을 통해 반환된 String이 출력
+        System.out.println(sum(3,4)); // 리턴을 통해 반환된 int값이 출력
         hellojava();
     }
     public static String oddjudge(int num)
