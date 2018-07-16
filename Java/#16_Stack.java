@@ -19,6 +19,7 @@ public class StackMain {
         이때 인덱스는 제일 상단에 있는(제일 마지막으로 저장된) 요소의 위치부터 0이 아닌 1부터 시작함.
     */
 
+
     public static void main(String[] args) {
         Stack<Integer> stack = new Stack<>();
         for (int i = 0; i < 5; i++) {
