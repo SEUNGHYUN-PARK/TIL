@@ -11,7 +11,7 @@ public class StackMain {
         pop();
         스택의 최상단 객체를 제거함
 
-        peek
+        peek();
         스택의 최상단 데이터를 칭할때 씀
 
         int search(Object)
