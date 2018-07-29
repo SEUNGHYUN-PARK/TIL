@@ -6,7 +6,7 @@ Gof_Design_Pattern
 2. [Adapter Pattern](#adapter-pattern)  
 
 #### 공부하는데 이용한 자료들  
-* [Youtube - 자바 디자인 패턴 이해]("https://youtu.be/UEjsbd3IZvA")  
+* [Youtube - 자바 디자인 패턴 이해](https://youtu.be/UEjsbd3IZvA)  
 * UML과 GoF 디자인 패턴 핵심 10가지로 배우는 Java 객체 지향 디자인 패턴 - 한빛미디어  
 
 ## Strategy Pattern  
