@@ -4,6 +4,7 @@ Gof_Design_Pattern
 ----------------------------
 1. [Strategy Pattern](#strategy-pattern)  
 2. [Adapter Pattern](#adapter-pattern)  
+3. [Template Method Pattern](#template-method-pattern)
 
 #### 공부하는데 이용한 자료들  
 * [Youtube - 자바 디자인 패턴 이해](https://youtu.be/UEjsbd3IZvA)  
