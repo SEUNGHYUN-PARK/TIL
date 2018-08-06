@@ -8,6 +8,7 @@ Gof_Design_Pattern
 4. [Factory Method Pattern](#factory-method-pattern)
 5. [Singleton Pattern](#singleton-pattern)
 6. [Prototype Pattern](#prototype-pattern)
+7. [Abstract Factory Pattern](#abstract-factory-pattern)
 
 #### 공부하는데 이용한 자료들  
 * [Youtube - 자바 디자인 패턴 이해](https://youtu.be/UEjsbd3IZvA)  
@@ -129,3 +130,14 @@ Gof_Design_Pattern
 * set메소드들을 사용해 객체 내 인스턴스 변수들을 설정해주면, 기존의 패러미터에 대한 엄격했던 생성을 막을 수 있고, 그만큼 객체설정에 대해 유연성을 갖는다
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Builder_UML_class_diagram.svg/700px-Builder_UML_class_diagram.svg.png)  
+
+## Abstract Factory Pattern  
+#### Abstract Factory Pattern의 정의  
+* 많은 수의 연관된 서브 클래스를 특정 그룹으로 묶어 한번에 교체할 수 있도록 만든 디자인 패턴  
+#### Abstract Factory Pattern의 구조
+* 추상클래스가 아닌 인터페이스를 활용해 상위 계층을 만들어줌
+![](https://t1.daumcdn.net/cfile/tistory/217F4A3A5934D31A28)  
+#### Abstract Factory Pattern vs Factory pattern의 차이점  
+1. 전자는 인터페이스를 활용했고, 후자는 추상클래스를 사용함  
+2. 객체안에 객체들을 설정하는 과정이 전자, 그냥 단순히 객체만을 생성하는 조건을 추가한게 후자  
+3. 전자는 템플릿 메소드랑 팩토리 메소드 패턴을 결합할 수 있음  
