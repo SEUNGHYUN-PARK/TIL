@@ -2,13 +2,15 @@ Gof_Design_Pattern
 ====================
 목차
 ----------------------------
-1. [Strategy Pattern](#strategy-pattern)  
-2. [Adapter Pattern](#adapter-pattern)  
-3. [Template Method Pattern](#template-method-pattern)
-4. [Factory Method Pattern](#factory-method-pattern)
-5. [Singleton Pattern](#singleton-pattern)
-6. [Prototype Pattern](#prototype-pattern)
-7. [Abstract Factory Pattern](#abstract-factory-pattern)
+* [Strategy Pattern](#strategy-pattern)  
+* [Adapter Pattern](#adapter-pattern)  
+* [Template Method Pattern](#template-method-pattern)
+* [Factory Method Pattern](#factory-method-pattern)
+* [Singleton Pattern](#singleton-pattern)
+* [Prototype Pattern](#prototype-pattern)
+* [Abstract Factory Pattern](#abstract-factory-pattern)
+* [Bridge Pattern](#bridge-pattern)
+* [Composite Pattern](#composite-pattern)
 
 #### 공부하는데 이용한 자료들  
 * [Youtube - 자바 디자인 패턴 이해](https://youtu.be/UEjsbd3IZvA)  
@@ -150,3 +152,17 @@ Gof_Design_Pattern
 #### Bridge Pattern의 구조
 * Abstraction 클래스의 Hierarchy 구조와 Implementation 클래스의 Hierarchy 구조를 분리  
 ![](https://t1.daumcdn.net/cfile/tistory/2171BB4B557B898D2F)  
+## Composite Pattern
+#### Composite Pattern의 정의
+* 단일객체든, 객체집합이든 같은 방법으로 취급하는 패턴  
+* 객체들의 관계를 트리 구조로 구성하여 부분-전체 계층을 표현하는 패턴
+#### Composite Pattern의 구조
+* 인터페이스를 implement한 복수객체,그리고 단수객체를 하위클래스로 선언해줌
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Composite_UML_class_diagram_%28fixed%29.svg/960px-Composite_UML_class_diagram_%28fixed%29.svg.png)  
+
+## Decorator Pattern
+#### Decorator Pattern의 정의
+* 주어진 상황 및 용도에 따라 어떤 객체에 책임을 덧붙이는 패턴으로, 기능 확장이 필요할 때 서브클래싱 대신 쓸 수 있는 유연한 대안  
+#### Decorator Pattern의 구조  
+* 클래스다이어그램 최상단엔 인터페이스/(추상)클래스가 존재하고, 그 아래에는 최상단 인터페이스의 메소드를 오버라이드하는 컴퍼넌트와 데커레이터가 있다. 그리고 그 데커레이터 아래엔 이를 물려받는 하위 클래스들이 존재한다.  
+![](https://t1.daumcdn.net/cfile/tistory/2545B4385733308E39)  
