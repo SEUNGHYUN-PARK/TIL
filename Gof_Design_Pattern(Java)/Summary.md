@@ -11,6 +11,7 @@ Gof_Design_Pattern
 * [Abstract Factory Pattern](#abstract-factory-pattern)
 * [Bridge Pattern](#bridge-pattern)
 * [Composite Pattern](#composite-pattern)
+* [Decorator Pattern](#decorator-pattern)
 
 #### 공부하는데 이용한 자료들  
 * [Youtube - 자바 디자인 패턴 이해](https://youtu.be/UEjsbd3IZvA)  
