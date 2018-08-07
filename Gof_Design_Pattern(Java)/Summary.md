@@ -141,3 +141,12 @@ Gof_Design_Pattern
 1. 전자는 인터페이스를 활용했고, 후자는 추상클래스를 사용함  
 2. 객체안에 객체들을 설정하는 과정이 전자, 그냥 단순히 객체만을 생성하는 조건을 추가한게 후자  
 3. 전자는 템플릿 메소드랑 팩토리 메소드 패턴을 결합할 수 있음  
+
+## Bridge Pattern
+#### Bridge Pattern의 정의
+* 구현부와 추상부를 분리하여 각각 독립적으로 개발할 수 있게 하는 패턴
+* 기능과 구현을 별도의 클래스로 정의하여 서로를 분리하는 패턴
+* 확장설계에 용이
+#### Bridge Pattern의 구조
+* Abstraction 클래스의 Hierarchy 구조와 Implementation 클래스의 Hierarchy 구조를 분리  
+![](https://t1.daumcdn.net/cfile/tistory/2171BB4B557B898D2F)  
