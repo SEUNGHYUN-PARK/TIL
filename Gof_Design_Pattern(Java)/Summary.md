@@ -173,6 +173,7 @@ Gof_Design_Pattern Summary
 #### Decorator Pattern의 구조  
 * 클래스다이어그램 최상단엔 인터페이스/(추상)클래스가 존재하고, 그 아래에는 최상단 인터페이스의 메소드를 오버라이드하는 컴퍼넌트와 데커레이터가 있다. 그리고 그 데커레이터 아래엔 이를 물려받는 하위 클래스들이 존재한다.  
 ![](https://t1.daumcdn.net/cfile/tistory/2545B4385733308E39)  
+
 ## Visitor Pattern
 #### Visitor Pattern의 정의
 * 알고리즘을 객체 구조에서 분리 시키는 패턴
@@ -204,4 +205,8 @@ Gof_Design_Pattern Summary
 
 ## Observer Pattern
 #### Observer Pattern의 정의
+* 옵저버들의 목록을 객체에 등록하여 상태 변화가 있을 때마다 메서드 등을 통해 객체가 직접 목록의 각 옵저버들에게 통지하도록 하는 디자인 패턴  
 #### Observer Pattern의 구조
+* 옵저버 또는 리스너(listener)라 불리는 하나 이상의 객체를 관찰 대상이 되는 객체에 등록시킨다. 그리고 각각의 옵저버들은 관찰 대상인 객체가 발생시키는 이벤트를 받아 처리  
+
+![](http://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile8.uf.tistory.com%2Fimage%2F273E2B4E58381D651FB5C8)
