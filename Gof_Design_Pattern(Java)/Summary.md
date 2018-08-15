@@ -13,7 +13,7 @@ Gof_Design_Pattern Summary
 * [Composite Pattern](#composite-pattern)
 * [Decorator Pattern](#decorator-pattern)
 * [Visitor Pattern](#visitor-pattern)
-* [Chain of Responsibility Pattern](#chain-of-responsibility)
+* [Chain of Responsibility Pattern](#chain-of-responsibility-pattern)
 * [Facade Pattern](#facade-pattern)
 * [Observer Pattern](#observer-pattern)
 
