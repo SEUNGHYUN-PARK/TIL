@@ -182,13 +182,25 @@ Gof_Design_Pattern Summary
 
 ![](http://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile5.uf.tistory.com%2Fimage%2F2446D8435834EE5D3396E8)
 
-## Chain of Responsibility Pattern
-#### Chain of Responsibility Pattern의 정의
+## Chain of Responsibility Pattern  
+#### Chain of Responsibility Pattern의 정의  
+* 명령객체와 일련의 처리 객체를 포함하는 패턴  
+* 결합을 느슨하게 하기 위해 고안된 패턴  
+* 한 개의 요청에 대하여 여러 객체에게 처리할 수 있는 기회를 주도록 한 디자인패턴  
 #### Chain of Responsibility Pattern의 구조
+* 대표적으로 try-catch-finally구문을 예로 들 수 있음
+  * try 영역에서 처리하지 못할 시, catch영역에서 처리를 위한 시도를하며, 결국은 finally로 접근하는 흐름을 가지듯이 **순차적인 처리를 수행하는 구조**  
+
+![](http://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile3.uf.tistory.com%2Fimage%2F241B444858355668383804)
 
 ## Facade Pattern
 #### Facade Pattern의 정의
+* 어떤 서브시스템의 일련의 인터페이스에 대한 통합된 인터페이스를 제공  
+* 퍼사드에서 고수준의 인터페이스를 정의하여 서브시스템을 좀 더 쉽게 사용 가능  
 #### Facade Pattern의 구조
+* 부속에 해당하는 객체들을 상위 객체안에 할당하고 거기서 일련의 과정을 처리해주는 구조  
+
+![](https://upload.wikimedia.org/wikipedia/commons/a/ac/FacadeDesignPattern.png)
 
 ## Observer Pattern
 #### Observer Pattern의 정의
