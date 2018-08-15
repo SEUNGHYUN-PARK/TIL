@@ -1,4 +1,4 @@
-Gof_Design_Pattern
+Gof_Design_Pattern Summary
 ====================
 목차
 ----------------------------
@@ -12,6 +12,12 @@ Gof_Design_Pattern
 * [Bridge Pattern](#bridge-pattern)
 * [Composite Pattern](#composite-pattern)
 * [Decorator Pattern](#decorator-pattern)
+* [Visitor Pattern](#visitor-pattern)
+* [Chain of Responsibility Pattern](#chain-of-responsibility)
+* [Facade Pattern](#facade-pattern)
+* [Observer Pattern](#observer-pattern)
+
+
 
 #### 공부하는데 이용한 자료들  
 * [Youtube - 자바 디자인 패턴 이해](https://youtu.be/UEjsbd3IZvA)  
@@ -167,3 +173,23 @@ Gof_Design_Pattern
 #### Decorator Pattern의 구조  
 * 클래스다이어그램 최상단엔 인터페이스/(추상)클래스가 존재하고, 그 아래에는 최상단 인터페이스의 메소드를 오버라이드하는 컴퍼넌트와 데커레이터가 있다. 그리고 그 데커레이터 아래엔 이를 물려받는 하위 클래스들이 존재한다.  
 ![](https://t1.daumcdn.net/cfile/tistory/2545B4385733308E39)  
+## Visitor Pattern
+#### Visitor Pattern의 정의
+* 알고리즘을 객체 구조에서 분리 시키는 패턴
+#### Visitor Pattern의 구조
+* 멤버변수와 메서드를 다른 클래스로 분리하여,서로를 호출하게 함으로써,
+**추후 메소드 추가를 용이하게 하는 장점** 이 있다.  
+
+![](http://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile5.uf.tistory.com%2Fimage%2F2446D8435834EE5D3396E8)
+
+## Chain of Responsibility Pattern
+#### Chain of Responsibility Pattern의 정의
+#### Chain of Responsibility Pattern의 구조
+
+## Facade Pattern
+#### Facade Pattern의 정의
+#### Facade Pattern의 구조
+
+## Observer Pattern
+#### Observer Pattern의 정의
+#### Observer Pattern의 구조
