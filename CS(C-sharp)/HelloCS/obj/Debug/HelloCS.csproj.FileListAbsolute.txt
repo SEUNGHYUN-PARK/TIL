@@ -1,7 +1,0 @@
-Z:\git\TIL\C_Sharp\HelloCS\bin\Debug\HelloCS.exe.config
-Z:\git\TIL\C_Sharp\HelloCS\bin\Debug\HelloCS.exe
-Z:\git\TIL\C_Sharp\HelloCS\bin\Debug\HelloCS.pdb
-Z:\git\TIL\C_Sharp\HelloCS\obj\Debug\HelloCS.csprojAssemblyReference.cache
-Z:\git\TIL\C_Sharp\HelloCS\obj\Debug\HelloCS.csproj.CoreCompileInputs.cache
-Z:\git\TIL\C_Sharp\HelloCS\obj\Debug\HelloCS.exe
-Z:\git\TIL\C_Sharp\HelloCS\obj\Debug\HelloCS.pdb
