@@ -42,6 +42,8 @@ namespace HelloCS // 프로그램 몸체
             Console.WriteLine("{0}\n{1}", b, d);
             Console.WriteLine("{0:C} {1:P} {0:X}",123,123.45);
             Console.WriteLine("{0:c} {1:x} {2:p}", 012, 345, 678);
+            
+
         }
     }
 }

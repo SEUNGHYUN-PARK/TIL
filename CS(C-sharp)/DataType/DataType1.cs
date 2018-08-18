@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataType
 {
-    class Program
+    class DataType1
     {
         static bool Boolvar; // false의 값을 가짐
         static void Main(string[] args)
