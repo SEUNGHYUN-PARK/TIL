@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloCS", "HelloCS\HelloCS.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataType", "DataType\DataType.csproj", "{AF134A69-2B98-4241-8AB1-A3F80C44648C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataType-2", "DataType-2\DataType-2.csproj", "{0EDD8878-683A-4093-936D-13B9D2355A5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{AF134A69-2B98-4241-8AB1-A3F80C44648C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF134A69-2B98-4241-8AB1-A3F80C44648C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AF134A69-2B98-4241-8AB1-A3F80C44648C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EDD8878-683A-4093-936D-13B9D2355A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EDD8878-683A-4093-936D-13B9D2355A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EDD8878-683A-4093-936D-13B9D2355A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EDD8878-683A-4093-936D-13B9D2355A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
