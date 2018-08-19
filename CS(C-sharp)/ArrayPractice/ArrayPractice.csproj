@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{15A01ECC-DF69-4ADF-A1C1-56C54DE09AA0}</ProjectGuid>
+    <ProjectGuid>{12B6CB5F-25AE-40BC-B77F-0B92F7A5F570}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BasicGram</RootNamespace>
-    <AssemblyName>BasicGram</AssemblyName>
+    <RootNamespace>ArrayPractice</RootNamespace>
+    <AssemblyName>ArrayPractice</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

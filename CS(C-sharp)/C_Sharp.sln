@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataType", "DataType\DataTy
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicGram", "BasicGram\BasicGram.csproj", "{15A01ECC-DF69-4ADF-A1C1-56C54DE09AA0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayPractice", "ArrayPractice\ArrayPractice.csproj", "{12B6CB5F-25AE-40BC-B77F-0B92F7A5F570}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{15A01ECC-DF69-4ADF-A1C1-56C54DE09AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15A01ECC-DF69-4ADF-A1C1-56C54DE09AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15A01ECC-DF69-4ADF-A1C1-56C54DE09AA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12B6CB5F-25AE-40BC-B77F-0B92F7A5F570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B6CB5F-25AE-40BC-B77F-0B92F7A5F570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B6CB5F-25AE-40BC-B77F-0B92F7A5F570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B6CB5F-25AE-40BC-B77F-0B92F7A5F570}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
