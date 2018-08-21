@@ -228,21 +228,50 @@ Gof_Design_Pattern Summary
 ![](https://t1.daumcdn.net/cfile/tistory/2575954E53F35F5D12)  
 ## State Pattern
 #### State Pattern의 정의
+* 객체의 상태에 따라 각각의 행위를 변경할 수 있게 캡슐화하는 구조
+* 동적으로 행동을 교체할 수 있음
 #### State Pattern의 구조
 * 전략패턴마냥, 자기 자신을 상태객체들로 두고 그 상태를 바꿀 수 있는 메소드들을 선언과 적용을 통해 객체의 상태변화를 가능케하는 구조
 
+![](https://upload.wikimedia.org/wikipedia/de/7/70/StatePattern_Classdiagramm.png)
+
 ## Memento Pattern
-#### 정의
-#### 구조
+#### Memento Pattern 정의
+* 객체의 상태 정보를 저장하고 사용자의 필요에 의하여 원하는 시점의 데이터를 복원 할 수 있는 패턴
+#### Memento Pattern 구조
+* Originator는 원조 객체를 뜻함. Originator의 내부 정보를 저장하는 객체가 Memento
+Originator는 자신의 내부 상태를 저장하는 CreateMemento 함수를 가지고 있고 다시 Memento로 내부 상태를 복원하는 SetMemento 함수가 있음
+앞서 말했듯이 메멘토 패턴을 이용하여 캡슐화를 지키면서 내부상태를 공유할 수 있습니다. 하지만 자주 메멘토를 반환해야 하는 때라면 상당한 오베헤드를 가져올 수 있습니다. 또한 메멘토를 관리하는 비용도 존재  
+
+![](https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory&fname=http%3A%2F%2Fcfile6.uf.tistory.com%2Fimage%2F9933BA3E5A366FAE0AE7E3)
+
 
 ## Flyweight Pattern
-#### 정의
-#### 구조
+#### Flyweight Pattern 정의
+* 비용이 큰 자원을 공통으로 사용할 수 있도록 만드는 패턴
+  * 비용이 크다 == 중복 생성될 가능성이 높은경우
+  * 자원 생상 비용은 큰데 사용 빈도가 낮은 경우
+
+#### Flyweight Pattern 구조
+* FlyweightFactory에서 플라이급 객체들을 관리
+사용자가 객체를 요청하면, FlyweightFactory는 이미 존재하는 인스턴스를 제공하거나 없다면 새로 만들어 전달
+
+![](https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory&fname=http%3A%2F%2Fcfile2.uf.tistory.com%2Fimage%2F99C3C0335A13799B2A1DC2)
 
 ## Proxy Pattern
 #### 정의
+* 대리자,대변인의 뜻 처럼 프로그램이 프록시에게 어떤 일을 대신 시키는 패턴
 #### 구조
+* 구체적으로 인터페이스를 사용하고 실행시킬 클래스에 대한 객체가 들어갈 자리에 대리자 객체를 다시 투입
+
+![](https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory&fname=http%3A%2F%2Fcfile4.uf.tistory.com%2Fimage%2F993319415A2EAD5F10074A)
 
 ## Command Pattern
 #### 정의
+* 요청 자체를 캡슐화, 이를 통해 요청이 서로 다른 사용자를 매개변수로 만들고, 요청을 대기시키거나 로깅하며, 되돌릴 수 있는 연사을 지원
 #### 구조
+* Command에서 연산 수행에 필요한 인터페이스를 선언하고 ConcreteCommand에서 Receiver 객체와 액션 간 연결성을 정의  
+Invoker는 Command에 요청하는 객체  
+Receiver는 실제 수행해야할 연산 방법을 알고 있는 객체  
+
+![](https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory&fname=http%3A%2F%2Fcfile10.uf.tistory.com%2Fimage%2F998CE84A5A35D21119DC5D)
