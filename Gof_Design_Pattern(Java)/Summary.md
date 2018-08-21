@@ -16,7 +16,12 @@ Gof_Design_Pattern Summary
 * [Chain of Responsibility Pattern](#chain-of-responsibility-pattern)
 * [Facade Pattern](#facade-pattern)
 * [Observer Pattern](#observer-pattern)
-
+* [Mediator Pattern](#mediator-pattern)
+* [State Pattern](#state-pattern)
+* [Memento Pattern](#memento-pattern)
+* [Flyweight Pattern](#flyweight-pattern)
+* [Proxy Pattern](#proxy-pattern)
+* [Command Pattern](#command-pattern)
 
 
 #### 공부하는데 이용한 자료들  
@@ -210,3 +215,34 @@ Gof_Design_Pattern Summary
 * 옵저버 또는 리스너(listener)라 불리는 하나 이상의 객체를 관찰 대상이 되는 객체에 등록시킨다. 그리고 각각의 옵저버들은 관찰 대상인 객체가 발생시키는 이벤트를 받아 처리  
 
 ![](http://img1.daumcdn.net/thumb/R1920x0/?fname=http%3A%2F%2Fcfile8.uf.tistory.com%2Fimage%2F273E2B4E58381D651FB5C8)
+
+## Mediator Pattern
+#### Mediator Pattern의 정의
+* 객체간의 상호 작용을 세트로 묶어 캡슐화하는 객체를 정의하는 패턴
+#### Mediator Pattern의 구조
+* 추상클래스로 상속받은 중재자에 클라이언트 둘 이상의 중간에서 데이터를 처리해주는 구조  
+* 얼핏 보면 파사드 패턴과 유사하지만 다르다
+  * 중재자 패턴은 행위 패턴 (in-run-time의 행위들을 묶어준다)
+  * 객체간의 의존성을 낮추고 소스 리딩성을 올리고 유지보수를 편하게 하는것이 주 사용 목적
+
+![](https://t1.daumcdn.net/cfile/tistory/2575954E53F35F5D12)  
+## State Pattern
+#### State Pattern의 정의
+#### State Pattern의 구조
+* 전략패턴마냥, 자기 자신을 상태객체들로 두고 그 상태를 바꿀 수 있는 메소드들을 선언과 적용을 통해 객체의 상태변화를 가능케하는 구조
+
+## Memento Pattern
+#### 정의
+#### 구조
+
+## Flyweight Pattern
+#### 정의
+#### 구조
+
+## Proxy Pattern
+#### 정의
+#### 구조
+
+## Command Pattern
+#### 정의
+#### 구조
