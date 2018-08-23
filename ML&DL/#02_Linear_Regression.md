@@ -39,8 +39,8 @@ Cost function에 대한 해당식은 H(x)-y로 가정해보자.
 
 ![](https://postfiles.pstatic.net/MjAxODA4MjNfMjkw/MDAxNTM1MDAxMjQxMjY3.__JIvGPzEtq5ZL-LdCgvYSN_GT5POY66pMSJT5D8Hkcg.skk8OsImwgutVbavyAop8lavECH2vKtfwQgVdvkW79Eg.PNG.npqfr123/image.png?type=w773)  
 
-* 위 그래프를 확인하면, W가 1일때가 cost가 0에 근사함을 확인할 수 있다. 하지만 이는 우리의 육안으로 확인한것이고, 기계가 스스로 검색하기에는 우리의 방식이 제한된다. 그럼 어떻게 해야할까? 이는 Gredient descent algorithm을 이용하면된다.(그래서 예제코드에 GradientDescentOptimizer 이 메소드가 있었구나...)
-지금부터 Gredient descent algorithm이 최소 코스트를 찾는 알고리즘을 설명하려한다. 결론부터 이야기하면 다음의 공식으로 최소 코스트 값을 산출해내는 W를 찾아낸다
+* 위 그래프를 확인하면, W가 1일때가 cost가 0에 근사함을 확인할 수 있다. 하지만 이는 우리의 육안으로 확인한것이고, 기계가 스스로 검색하기에는 우리의 방식이 제한된다. 그럼 어떻게 해야할까? 이는 gradient descent algorithm을 이용하면된다.(그래서 예제코드에 GradientDescentOptimizer 이 메소드가 있었구나...)
+지금부터 gradient descent algorithm이 최소 코스트를 찾는 알고리즘을 설명하려한다. 결론부터 이야기하면 다음의 공식으로 최소 코스트 값을 산출해내는 W를 찾아낸다
 
 
 ![](https://postfiles.pstatic.net/MjAxODA4MjNfMTYg/MDAxNTM1MDAzODU5ODIz.-p1GFuHpwUMI0HcE5rOOJHb26-xOj0LhUPwd7cMwXr8g.aV8DyWhAz7oZrBHVsJ5t2M2B97t3Q-d6TMAO3rDoTawg.PNG.npqfr123/image.png?type=w773)
@@ -49,9 +49,9 @@ Cost function에 대한 해당식은 H(x)-y로 가정해보자.
 
 ![](https://blogfiles.pstatic.net/MjAxODA4MjNfODAg/MDAxNTM1MDA2MTEzMTc0.1T5oG9hcpnAzVBOa_UL6TAKuT7NCGFgVIacZVHEDRk4g.RlU2_aUbq3EHTtZoXIj66dNOQcnrK5AZfJ-brzTJZoQg.PNG.npqfr123/image_6327630511535005198991.png?type=w1)
 
-* 아래 두 그림은 Gradient Descent Algorithm을 적용할 수 있는 데이터와 그렇지 않은 데이터를 나타낸 그래프이다 우선 첫번째 그림을 보면 W,b 그리고 코스트 값이 규칙성이없기떄문에 이 데이터는 Gredient Descent Algorithm을 적용할 수 없다 반대로, 두번째그림은 W,b에 따른 코스트값에 규칙이 존재하기 떄문에 Gredient Descent Algorithm을 적용할 수 있다.
+* 아래 두 그림은 Gradient Descent Algorithm을 적용할 수 있는 데이터와 그렇지 않은 데이터를 나타낸 그래프이다. 우선 첫번째 그림을 보면 W,b 그리고 코스트 값이 규칙성이없기떄문에 이 데이터는 gradient Descent Algorithm을 적용할 수 없다. 반대로, 두번째그림은 W,b에 따른 코스트값에 규칙이 존재하기 떄문에 gradient Descent Algorithm을 적용할 수 있다.
 
-![Gredient Descent Algorithm을 이용할 수 없는 데이터 ](https://postfiles.pstatic.net/MjAxODA4MjNfNjgg/MDAxNTM1MDA2NTM3MzI4._c-tuD_UPAztsj1Z8t9wKaHI2O4L0D4iPfZgwLsURCMg.rP48oSSVEmtHI8Xykh76do2Hjgl0ARlWgAioup3dykkg.PNG.npqfr123/image.png?type=w773)
+![gradient Descent Algorithm을 이용할 수 없는 데이터 ](https://postfiles.pstatic.net/MjAxODA4MjNfNjgg/MDAxNTM1MDA2NTM3MzI4._c-tuD_UPAztsj1Z8t9wKaHI2O4L0D4iPfZgwLsURCMg.rP48oSSVEmtHI8Xykh76do2Hjgl0ARlWgAioup3dykkg.PNG.npqfr123/image.png?type=w773)
 
 
-![Gredient Descent Algorithm을 이용할 수 있는 데이터 ](https://postfiles.pstatic.net/MjAxODA4MjNfMjE5/MDAxNTM1MDA2NTEzNTU3.EYqA6pRlYG9f_5WxfHF-NWmY_3qNdcK_BysamRHTsdMg.YSMFppauZKMRQfZ03OM2xPXh8SqKHKKRg4DiUV6Ir00g.PNG.npqfr123/image.png?type=w773)
+![gradient Descent Algorithm을 이용할 수 있는 데이터 ](https://postfiles.pstatic.net/MjAxODA4MjNfMjE5/MDAxNTM1MDA2NTEzNTU3.EYqA6pRlYG9f_5WxfHF-NWmY_3qNdcK_BysamRHTsdMg.YSMFppauZKMRQfZ03OM2xPXh8SqKHKKRg4DiUV6Ir00g.PNG.npqfr123/image.png?type=w773)
