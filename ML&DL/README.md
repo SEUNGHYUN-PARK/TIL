@@ -4,12 +4,12 @@ SUMMARY
 ------------------------------------
 
 ### CONTENTS
-* [Machine learning basic concepts](#machine-learning-basic-concepts)  
-* [Linear regression](#linear-regression)
-* [Logistic regression](#logistic-regression)
-* [Multivariable linear/logistic regression](#multivariable-linear/logistic-regression)
-* [Neural networks](#neural-networks)
-* [Deep learning](#deep-learning)
+* [Machine learning basic concepts](https://github.com/SEUNGHYUN-PARK/TIL/blob/master/ML%26DL/%2301_Machine_Learning_Basic_Concepts.md)  
+* [Linear regression](https://github.com/SEUNGHYUN-PARK/TIL/blob/master/ML%26DL/%2302_Linear_Regression.md)
+* [Logistic regression](https://github.com/SEUNGHYUN-PARK/TIL/blob/master/ML%26DL/%2303_Logistic_Regression.md)
+* [Multivariable linear/logistic regression](https://github.com/SEUNGHYUN-PARK/TIL/blob/master/ML%26DL/%2304_Multivariable_Linear%26Logictic_Regression.md)
+* [Neural networks](https://github.com/SEUNGHYUN-PARK/TIL/blob/master/ML%26DL/%2305_Neural%20Networks.md)
+* [Deep learning](https://github.com/SEUNGHYUN-PARK/TIL/blob/master/ML%26DL/%2306_Deep_Learning.md)
 
 
 ### Reference
