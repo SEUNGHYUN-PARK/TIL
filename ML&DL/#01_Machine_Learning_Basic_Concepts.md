@@ -1,27 +1,17 @@
 Machine Learning & Deep Learning
 ===================================
-SUMMARY
+Machine Learning Basic Concepts
 ------------------------------------
 
 ### CONTENTS
-* [Machine learning basic concepts](#machine-learning-basic-concepts)  
-  * [Intro](#intro)
-  * [예제를 통해 알아보는 Tensorflow의 기본적인 operation](예제를-통해-알아보는-tensorflow의-기본적인-operation)
-  * [Everything is Tensor](#everything-is-tensor)
-* [Linear regression](#linear-regression)
-* [Logistic regression](#logistic-regression)
-* [Multivariable linear/logistic regression](#multivariable-linear/logistic-regression)
-* [Neural networks](#neural-networks)
-* [Deep learning](#deep-learning)
-  * [CNN](#cnn)
-  * [RNN](#rnn)
-  * [Bidirectional Neural networks](#bidirectional-neural-networks)
+* [Intro](#intro)
+* [예제를 통해 알아보는 Tensorflow의 기본적인 operation](#예제를-통해-알아보는-tensorflow의-기본적인-operation)
+* [Everything is Tensor](#everything-is-tensor)
 
 ### Reference
 * [Youtube - 모두를 위한 딥러닝 강좌 시즌1](https://www.youtube.com/watch?v=BS6O0zOGX4E&list=PLlMkM4tgfjnLSOjrEJN31gZATbcj_MpUm&index=1)
 
-#### Machine learning basic concepts
-##### Intro
+### Intro
 * Explicit programming의 한계 -> 많은 규칙
   * 스팸필터
   * 자율주행차
@@ -46,7 +36,7 @@ SUMMARY
   * Unsupervised Learning
     * 정해져있지않은 데이터들을 바탕으로, 기계가 스스로 학습하는 것
 
-##### 예제를 통해 알아보는 Tensorflow의 기본적인 operation
+### 예제를 통해 알아보는 Tensorflow의 기본적인 operation
 * 설치는 알아서...
 * **0) 이해를 위한 참고자료**
 
@@ -99,7 +89,7 @@ SUMMARY
 * **Placeholder 소스분석**  
 ***이전 Computational graph 소스에서는 constant를 선언해주고 각 노드에 대한 데이터를 정의한 후 이들을 바탕으로 데이터연산을 해줬다. 하지만 Placeholder를 통해 그래프 노드를 생성해주면, 값을 초기화하지않아도된다는 장점과 함께, 데이터를 융통성있게 처리할 수 있다는 장점이 있다. 여기서 feed_dict는 각 노드에 대한 데이터값을 설정해주는 부분이라 생각하면된다***  
 
-##### Everything is Tensor  
+### Everything is Tensor  
 * 텐서플로우에는 텐서의 흐름이 제일 중요하다  
 * 텐서플로우에서의 텐서는 주로 Array를 의미한다  
 * Tensor Ranks, Shapes, Types  
@@ -119,9 +109,3 @@ SUMMARY
     * tf.int8
     * tf.int16
     * tf.int64
-
-#### Linear regression
-#### Logistic regression
-#### Multivariable linear/logistic regression
-#### Neural networks
-#### Deep Learning
