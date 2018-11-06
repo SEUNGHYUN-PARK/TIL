@@ -62,5 +62,4 @@ Logistic Regression
 
 * 형태가 변형되었기 때문에 Gradient decent algorithm을 적용할 수 있고, 이를 코드로 나타내면 아래의 그림과 같이 나타낼 수 있다.
 ![](https://postfiles.pstatic.net/MjAxODExMDZfNzQg/MDAxNTQxNDg0MjMxNzQz.HsFH_n0N0WDN4cG1A9RTV48KmwmTdvdXjRdInxD50aog.6Sibfc3d69iOTS3c783qpCNG5L0VoKt7_vIrarWc1rog.PNG.npqfr123/image.png?type=w773)
-
 ![](https://postfiles.pstatic.net/MjAxODExMDZfNCAg/MDAxNTQxNDg0MzExODE5.FwBnN24Leo5oMw2R5a7UC9I5A1jnVzDJkCb2OcU-iBIg.yJz8MoTmo0yKLKd58vJruUcn4Ojo1S46hY0Wo9Pi2TQg.PNG.npqfr123/image.png?type=w773)
