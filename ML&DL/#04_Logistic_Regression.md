@@ -5,10 +5,10 @@ Logistic Regression
 
 ### CONTENTS
 * [Intro](#intro)
-* [Classification](#classification)
+* [Classification](#classificationbinary)
 * [Classification에서 Linear Regression을 사용하면 야기되는 문제점](#classification에서-linear-regression을-사용하면-야기되는-문제점)
 * [Classification을 위한 Hypothesis 재정의](#classification을-위한-hypothesis-재정의)  
-* [Logistic Classification의 Cost & Gradient decent](#logistic-classification의-cost-&-gradient-decent)
+* [Logistic Classification의 Cost & Gradient decent](#logistic-classification의-cost--gradient-decent)
 
 
 ### Reference
@@ -16,7 +16,7 @@ Logistic Regression
 
 ### Intro
 * Logistic Regression을 배우기 앞서 Linear Regression에 대해 먼저 짚어보자
-* 기존의 Linear Regression에서의 기준이 되는 가설함수 H(x) = Wx
+* 기존의 Linear Regression에서의 기준이 되는 가설함수 H(x) = Wx
 * 그 기준과 실제 데이터의 차이를 나타내는 cost함수
 * cost값이 커버린상태에서는 문제가 되므로 cost값이 최저인 지점을 찾아야한다
 * 임의로 설정했던 W값을 재정의하는 방법으로는 현재W값에서 cost가 제일 낮은 지점의 기울기와 learning_rate의 곱만큼을 뺴줘야한다(Gradient descent)
@@ -60,7 +60,7 @@ Logistic Regression
 * 정리해서 식을 하나로 나타내면 다음과 같다. 두 식을 하나의 식으로 나타내기위해 별도의 과정을 거쳤다(그냥 1일때냐,0일떄냐에 따라 왼쪽 항이 사라질지 오른쪽 항이 사라지는거에 대해 장치를 깔아둔 것
 ![](https://postfiles.pstatic.net/MjAxODExMDZfNTUg/MDAxNTQxNDg0MjAyMTM3.ZGGWcWPCu_8n4_ODT-6XsivH32TZSAobvN8yVZlfeXIg.j5OLod6G35ZFKS8iHgwqd9NPCEpWzZEzbCyZlVsx_E4g.PNG.npqfr123/image.png?type=w773)
 
-* 형태가 변형되었기때문에 Gradient decent algorithm을 적용할 수 있고, 이를 코드로 나타내면 아래의 그림과 같이 나타낼 수 있다.
+* 형태가 변형되었기 때문에 Gradient decent algorithm을 적용할 수 있고, 이를 코드로 나타내면 아래의 그림과 같이 나타낼 수 있다.
 ![](https://postfiles.pstatic.net/MjAxODExMDZfNzQg/MDAxNTQxNDg0MjMxNzQz.HsFH_n0N0WDN4cG1A9RTV48KmwmTdvdXjRdInxD50aog.6Sibfc3d69iOTS3c783qpCNG5L0VoKt7_vIrarWc1rog.PNG.npqfr123/image.png?type=w773)
 
 ![](https://postfiles.pstatic.net/MjAxODExMDZfNCAg/MDAxNTQxNDg0MzExODE5.FwBnN24Leo5oMw2R5a7UC9I5A1jnVzDJkCb2OcU-iBIg.yJz8MoTmo0yKLKd58vJruUcn4Ojo1S46hY0Wo9Pi2TQg.PNG.npqfr123/image.png?type=w773)
