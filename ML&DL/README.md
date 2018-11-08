@@ -8,7 +8,7 @@ SUMMARY
 * [Linear regression](https://github.com/SEUNGHYUN-PARK/TIL/blob/master/ML%26DL/%2302_Linear_Regression.md)
 * [Multivariable linear regression](https://github.com/SEUNGHYUN-PARK/TIL/blob/master/ML%26DL/%2304_Multivariable_Linear%26Logictic_Regression.md)
 * [Logistic regression](https://github.com/SEUNGHYUN-PARK/TIL/blob/master/ML%26DL/%2303_Logistic_Regression.md)
-* [Softmax Regression]()
+* [Softmax Regression](https://github.com/SEUNGHYUN-PARK/TIL/blob/master/ML%26DL/%2305_Softmax_Regression.md)
 * [Neural networks](https://github.com/SEUNGHYUN-PARK/TIL/blob/master/ML%26DL/%2305_Neural%20Networks.md)
 * [Deep learning](https://github.com/SEUNGHYUN-PARK/TIL/blob/master/ML%26DL/%2306_Deep_Learning.md)
 
